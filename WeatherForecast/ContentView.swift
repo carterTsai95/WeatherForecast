@@ -6,6 +6,7 @@
 //
 
 
+import SDWebImageSwiftUI
 import SwiftUI
 
 struct ContentView: View {
@@ -37,10 +38,17 @@ struct ContentView: View {
                         Text(day.day)
                             .fontWeight(.bold)
                         HStack(alignment: .center) {
-                            Image(systemName: "hourglass")
-                                .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-                                .frame(width: 50, height: 50)
-                                .background(RoundedRectangle(cornerRadius: 10).fill(Color.green))
+                            WebImage(url: day.weatherIconURL)
+                                .resizable()
+                                .placeholder {
+                                    Image(systemName: "hourglass")
+                                }
+                                .scaledToFit()
+                                .frame(width: 75)
+//                            Image(systemName: "hourglass")
+//                                .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+//                                .frame(width: 50, height: 50)
+//                                .background(RoundedRectangle(cornerRadius: 10).fill(Color.green))
                             VStack(alignment: .leading){
                                 Text(day.overview)
                                 HStack {

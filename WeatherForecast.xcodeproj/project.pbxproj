@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		2B24A0142646FBBE009C2C5D /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B24A0132646FBBE009C2C5D /* APIService.swift */; };
 		2B24A01726470039009C2C5D /* ForecastListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B24A01626470039009C2C5D /* ForecastListViewModel.swift */; };
 		2B24A01A26470135009C2C5D /* ForecastViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B24A01926470135009C2C5D /* ForecastViewModel.swift */; };
+		2B24A01F264733F1009C2C5D /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 2B24A01E264733F1009C2C5D /* SDWebImageSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B24A01F264733F1009C2C5D /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +107,9 @@
 			dependencies = (
 			);
 			name = WeatherForecast;
+			packageProductDependencies = (
+				2B24A01E264733F1009C2C5D /* SDWebImageSwiftUI */,
+			);
 			productName = WeatherForecast;
 			productReference = 2B249FF92646E15F009C2C5D /* WeatherForecast.app */;
 			productType = "com.apple.product-type.application";
@@ -132,6 +137,9 @@
 				Base,
 			);
 			mainGroup = 2B249FF02646E15F009C2C5D;
+			packageReferences = (
+				2B24A01D264733F1009C2C5D /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = 2B249FFA2646E15F009C2C5D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -352,6 +360,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2B24A01D264733F1009C2C5D /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2B24A01E264733F1009C2C5D /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2B24A01D264733F1009C2C5D /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2B249FF12646E15F009C2C5D /* Project object */;
 }
