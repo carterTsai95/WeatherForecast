@@ -7,10 +7,26 @@
 
 import Foundation
 import CoreLocation
+import SwiftUI
 
 class ForecastListViewModel: ObservableObject {
     @Published var forecasts: [ForecastViewModel] = []
-    var location: String = ""
+    
+    @AppStorage("system") var system: Int = 0 {
+        didSet {
+            for i in 0..<forecasts.count {
+                forecasts[i].system = system
+            }
+        }
+    }
+    
+    @AppStorage("location") var location: String = ""
+    
+    init() {
+        if location != "" {
+            getWeatherForecast()
+        }
+    }
     
     func getWeatherForecast() {
         let apiService = APIService.shared
@@ -27,7 +43,7 @@ class ForecastListViewModel: ObservableObject {
                     switch result {
                     case .success(let forecast):
                         DispatchQueue.main.async{
-                            self.forecasts = forecast.daily.map {ForecastViewModel(forecast: $0)}
+                            self.forecasts = forecast.daily.map {ForecastViewModel(forecast: $0, system: self.system)}
                         }
                     case .failure(let apiError):
                         switch apiError {
