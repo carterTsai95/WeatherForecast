@@ -13,6 +13,8 @@
 		2B24A0042646E160009C2C5D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B24A0032646E160009C2C5D /* Preview Assets.xcassets */; };
 		2B24A0102646FB73009C2C5D /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B24A00F2646FB73009C2C5D /* Forecast.swift */; };
 		2B24A0142646FBBE009C2C5D /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B24A0132646FBBE009C2C5D /* APIService.swift */; };
+		2B24A01726470039009C2C5D /* ForecastListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B24A01626470039009C2C5D /* ForecastListViewModel.swift */; };
+		2B24A01A26470135009C2C5D /* ForecastViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B24A01926470135009C2C5D /* ForecastViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		2B24A0052646E160009C2C5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B24A00F2646FB73009C2C5D /* Forecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
 		2B24A0132646FBBE009C2C5D /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		2B24A01626470039009C2C5D /* ForecastListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastListViewModel.swift; sourceTree = "<group>"; };
+		2B24A01926470135009C2C5D /* ForecastViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				2B249FFC2646E15F009C2C5D /* WeatherForecastApp.swift */,
 				2B24A00F2646FB73009C2C5D /* Forecast.swift */,
 				2B249FFE2646E15F009C2C5D /* ContentView.swift */,
+				2B24A01926470135009C2C5D /* ForecastViewModel.swift */,
+				2B24A01626470039009C2C5D /* ForecastListViewModel.swift */,
 				2B24A0132646FBBE009C2C5D /* APIService.swift */,
 				2B24A0002646E160009C2C5D /* Assets.xcassets */,
 				2B24A0052646E160009C2C5D /* Info.plist */,
@@ -155,7 +161,9 @@
 				2B249FFF2646E15F009C2C5D /* ContentView.swift in Sources */,
 				2B24A0102646FB73009C2C5D /* Forecast.swift in Sources */,
 				2B24A0142646FBBE009C2C5D /* APIService.swift in Sources */,
+				2B24A01A26470135009C2C5D /* ForecastViewModel.swift in Sources */,
 				2B249FFD2646E15F009C2C5D /* WeatherForecastApp.swift in Sources */,
+				2B24A01726470039009C2C5D /* ForecastListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
