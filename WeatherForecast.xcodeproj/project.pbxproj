@@ -19,6 +19,7 @@
 		2B24A01A26470135009C2C5D /* ForecastViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B24A01926470135009C2C5D /* ForecastViewModel.swift */; };
 		2B24A01F264733F1009C2C5D /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 2B24A01E264733F1009C2C5D /* SDWebImageSwiftUI */; };
 		2B24A02726474FE0009C2C5D /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B24A02626474FE0009C2C5D /* UIApplication+Extension.swift */; };
+		2B448D722669ADE8005E0D4B /* APIServiceCombine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B448D712669ADE8005E0D4B /* APIServiceCombine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		2B24A01626470039009C2C5D /* ForecastListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastListViewModel.swift; sourceTree = "<group>"; };
 		2B24A01926470135009C2C5D /* ForecastViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastViewModel.swift; sourceTree = "<group>"; };
 		2B24A02626474FE0009C2C5D /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
+		2B448D712669ADE8005E0D4B /* APIServiceCombine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIServiceCombine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 		2B24A02526474FC2009C2C5D /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				2B448D712669ADE8005E0D4B /* APIServiceCombine.swift */,
 				2B24A0132646FBBE009C2C5D /* APIService.swift */,
 				2B24A02626474FE0009C2C5D /* UIApplication+Extension.swift */,
 			);
@@ -211,6 +214,7 @@
 			files = (
 				2B249FFF2646E15F009C2C5D /* ContentView.swift in Sources */,
 				2B24A0102646FB73009C2C5D /* Forecast.swift in Sources */,
+				2B448D722669ADE8005E0D4B /* APIServiceCombine.swift in Sources */,
 				2B24A0142646FBBE009C2C5D /* APIService.swift in Sources */,
 				2B24A01A26470135009C2C5D /* ForecastViewModel.swift in Sources */,
 				2B249FFD2646E15F009C2C5D /* WeatherForecastApp.swift in Sources */,

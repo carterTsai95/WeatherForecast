@@ -69,7 +69,7 @@ struct ContentView: View {
                                         Text("Clouds: \(day.clouds)")
                                         Text("POP: \(day.pop)")
                                     }
-                                    Text("Humidity: \(day.humidity)")
+                                    Text("\(day.humidity)")
                                 }
                             }
                         }

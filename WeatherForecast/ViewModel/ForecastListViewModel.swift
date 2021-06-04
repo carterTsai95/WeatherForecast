@@ -46,7 +46,7 @@ class ForecastListViewModel: ObservableObject {
             forecasts = []
         } else {
             isLoading = true
-            let apiService = APIService.shared
+            let apiService = APIServiceCombine.shared
             
             CLGeocoder().geocodeAddressString(location) { (placemarks, error) in
                 if let error = error as? CLError{
@@ -66,7 +66,7 @@ class ForecastListViewModel: ObservableObject {
                    let lon = placemarks?.first?.location?.coordinate.longitude {
                     
                     apiService.getJSON(urlString: "https://api.openweathermap.org/data/2.5/onecall?lat=\(lat)&lon=\(lon)&exclude=current,minutely,hourly,alerts&appid=f67cda0b893737623cc1cc52f3ff0aac",
-                                       dateDecodingStrategy: .secondsSince1970) { (result: Result<Forecast,APIService.APIError>) in
+                                       dateDecodingStrategy: .secondsSince1970) { (result: Result<Forecast,APIServiceCombine.APIError>) in
                         switch result {
                         case .success(let forecast):
                             DispatchQueue.main.async{
